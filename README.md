@@ -1,15 +1,13 @@
 # IMDb-query
 CRUD Flask app
-
-## Goal: 
-To create a basic Flask app to encompass what I've learned while working at UCI MIND as a student programmer.
-## App requirements:
+#### App requirements:
 * Search bar
 * Search Filter (movies, shows, actors, ratings)
+#### Goal: 
+To create a basic Flask app to encompass what I've learned while working at UCI MIND as a student programmer.
 
-
-# Terminal setup
-## First time setup (only needs to be done once by me)
+## Terminal setup
+### First time setup (only needs to be done once by me)
 ``` python
 # Create a Python virtual environment:
 python -m venv .venv
@@ -25,8 +23,8 @@ pip install flask
 pip3 freeze > requirements.txt
 ```
 
-## Set up Dev Environment (for later or anyone who clones this repo)
-### 1. Virtual environment setup and download dependencies
+### Set up Dev Environment (for later or anyone who clones this repo)
+#### 1. Virtual environment setup and download dependencies
 ``` python
 #1 Go to this repo's folder
 
@@ -51,7 +49,7 @@ python app.py
 # Deactivate when done
 deactivate
 ```
-### 2. Create a secrets.json file
+#### 2. Create a secrets.json file
 1. Go to this repo's root directory
 2. Create a new file called secrets.json
 3. Add the api keys and urls in this format: 
