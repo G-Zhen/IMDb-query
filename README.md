@@ -1,11 +1,10 @@
 # IMDb-query
 CRUD Flask app
-
-## Goal: 
-To create a basic Flask app to encompass what I've learned while working at UCI MIND as a student programmer.
-## App requirements:
+#### App requirements:
 * Search bar
 * Search Filter (movies, shows, actors, ratings)
+#### Goal: 
+To create a basic Flask app to encompass what I've learned while working at UCI MIND as a student programmer.
 
 
 # Terminal setup (note: I'm using Mac)
@@ -29,8 +28,8 @@ pip install mysql-connector-python
 pip3 freeze > website/requirements.txt
 ```
 
-## Set up Dev Environment (for later or anyone who clones this repo)
-### 1. Virtual environment setup and download dependencies
+### Set up Dev Environment (for later or anyone who clones this repo)
+#### 1. Virtual environment setup and download dependencies
 ``` python
 #1 Go to this repo's folder
 
