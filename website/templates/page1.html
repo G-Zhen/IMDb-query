@@ -1,0 +1,42 @@
+{% extends '_base.html' %}
+{% block content %}
+
+<div class="container text-center">
+    <h1>Page 1</h1>
+</div>
+
+<form action=" {{ url_for('page1') }}" method="post">
+    <div class="container">
+        <!--Question 1-->
+       <p><label for "Question 1"> Question 1 </label></p>
+       <div class="input-group input-group-lg">
+           <textarea class="form-control" style="height: 10em; resize: none; text-align: center;" id="q1" name="q1" placeholder="Your response for Question 1"></textarea>
+       </div>
+       <br>
+        <!--Question 2-->
+       <p><label for "Question 2"> Question 2 </label></p>
+       <div class="input-group input-group-lg">
+           <textarea class="form-control" style="height: 10em; resize: none; text-align: center;" id="q2" name="q2" placeholder="Your response for Question 2"></textarea>
+       </div>
+       <br>
+        <!--Question 3-->
+       <p><label for "Question 3"> Question 3 </label></p>
+       <div class="input-group input-group-lg">
+           <textarea class="form-control" style="height: 10em; resize: none; text-align: center;" id="q3" name="q3" placeholder="Your response for Question 3"></textarea>
+       </div>
+
+       <!--Submit button-->
+        <div class="py-3 d-grid gap-2 col-6 mx-auto">
+            <a href="{{ url_for('index', key=key, screen=0, msg='survey_completed') }}">
+                <input type="submit" class="btn btn-primary btn-lg center" style="height:50px; width:550px"/>
+            </a>
+            <button hidden type="button" class="btn btn-primary btn-lg disabled" id="loading_button">
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading....
+            </button>
+        </div>
+   </div>
+</form>
+</div>
+
+{% endblock %}

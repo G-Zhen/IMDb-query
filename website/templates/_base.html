@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='cropped-c2c-32x32.jpg') }}">
+    <title>IMDB Query</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <h1 class="display-1"><a href="{{ url_for('index')}}" style="text-decoration: none;">IMDB Query</a></h1>
+        <div class="nav nav-bar">
+            <a href="{{ url_for('page1')}}">page 1</a>
+        </div>
+        <hr>{% block content %} {% endblock %}
+    </div>
+
+    <script src="{{ url_for('static', filename='bootstrap.bundle.min.js') }}"></script>
+    <footer style="text-align: center;">
+        <div class="container-fluid">
+            <hr>
+            <p><i>2023 Grace Zhen</i></p>
+        </div>
+    </footer>
+</body>
+
+</html>
