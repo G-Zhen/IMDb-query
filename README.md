@@ -1,5 +1,6 @@
 # IMDb-query
 CRUD Flask app
+* current project status: in-progress
 #### App requirements:
 * Search bar
 * Search Filter (movies, shows, actors, ratings)
@@ -52,8 +53,8 @@ deactivate
 ### Potential pip downloading errors
 An error you might encounter is when you're installing MySQL. Here's what worked for me:
 ``` python
-# outside of .venv (Mac)
-brew install pkg-config
+# outside of .venv, download pkg-config (Mac instructions)
+brew install pkg-config 
 
 # in .venv
 find / -name 'mysqlclient.pc' 2>/dev/null #find path to mysqlclient
@@ -74,9 +75,10 @@ After those steps, try downloading from requirements.txt again.
         "api_base_url": "https://api.example.com/"
     },
     "database": {
-        "database_url": "your_database_url_here",
-        "db_username": "your_db_username_here",
-        "db_password": "your_db_password_here"
+        "database_HOST": "your_host",
+        "database_USER": "your_username",
+        "database_PASSWORD": "your_password",
+        "databse_DB": "your_db_name"
     },
     "app": {
         "secret_key": "your_secret_key_here"
