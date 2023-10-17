@@ -1,11 +1,11 @@
 # import dependencies
 from flask import Flask, redirect, render_template, request, url_for
-import os
 from flask_sqlalchemy import SQLAlchemy
-from models import db, User, Page1Response
 import json
 
 # import helper files
+from models import User, Page1Response
+
 # constants
 FLASK_APP_PATH = "/IMDB-Query/"
 DB_NAME = "imdb_DB.db"
@@ -65,9 +65,14 @@ def page1():
 
 
 if __name__ == "__main__":
-    # create tables from models if they don't exist
     with flask_app.app_context():
         db.create_all()
         print("database created")
+        # db.session.add(User())
+        # db.session.add(User())
+        # db.session.commit()
+        
+        # users = User.query.all()
+        # print("all users : " + users)
 
     flask_app.run(debug = True)
