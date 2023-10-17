@@ -61,11 +61,6 @@ deactivate
         "api_key": "your_api_key_here",
         "api_base_url": "https://api.example.com/"
     },
-    "database": {
-        "database_url": "your_database_url_here",
-        "db_username": "your_db_username_here",
-        "db_password": "your_db_password_here"
-    },
     "app": {
         "secret_key": "your_secret_key_here"
     }
